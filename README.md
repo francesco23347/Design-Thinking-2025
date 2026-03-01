@@ -86,8 +86,6 @@
    - เว็ปที่ใช้ในการ scraping ข้อมูล https://easytimetable.pro/education-timetable-generator/
    - Source code ที่ใช่ในการ scraping ข้อมูล และการสร้างเว็ป มาจาก ChatGPT
 
-
-
 1. **Clone repository นี้:**
    [```bash](https://github.com/francesco23347/Design-Thinking-2025)
 
@@ -95,3 +93,7 @@
    - เว็ปที่ใช้ในการ scraping ข้อมูล https://easytimetable.pro/education-timetable-generator/
    - Source code ที่ใช่ในการ scraping ข้อมูล และการสร้างเว็ป มาจาก ChatGPT
 
+**สะท้อนความคิด**
+   - ส่งงานล่าช้า ไม่ตามกำหนด
+   - ติดเกรงใจ ไม่พูดคุยสื่อสารกันให้เข้าใจ
+   - จะวางแผนงานให้รอบคอบและเป็นระบบมากกว่านี้และสื่อสารกันให้เข้าใจ

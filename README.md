@@ -3,11 +3,16 @@
 
 
 ## 🚀 ฟีเจอร์หลัก (Features)
-- ฟีเจอร์ที่ 1 ได้ต้นแบบระบบช่วยจัดตารางการอ่านหนังสือของนักศึกษา
-- ฟีเจอร์ที่ 2 ช่วยให้นักศึกษาบริหารเวลาอ่านหนังสือได้อย่างมีประสิทธิภาพ
-- ฟีเจอร์ที่ 3 ลดความเครียดและเพิ่มผลสัมฤทธิ์ทางการเรียนของนักศึกษา
-- ฟีเจอร์ที่ 4 สามารถนำไปพัฒนาต่อยอดเป็นระบบใช้งานจริงในอนาคต
-
+1. ระบบช่วยวางแผนและจัดตารางอ่านหนังสือ (Core Scheduling)
+   - การจัดตารางแบบเป็นระบบ: ช่วยให้นักศึกษาวางแผนการอ่านหนังสือได้อย่างมีระเบียบ แทนการอ่านแบบไม่มีทิศทาง    
+   - ความยืดหยุ่นในการใช้งาน: ตัวระบบถูกออกแบบมาให้ใช้งานง่ายและปรับเปลี่ยนได้ตามความเหมาะสมของแต่ละบุคคล 
+   - การบริหารเวลา: มีฟังก์ชันที่ช่วยให้นักศึกษาใช้เวลาได้อย่างมีประสิทธิภาพสูงสุด โดยเฉพาะในช่วงก่อนสอบ 
+2. การวิเคราะห์และจัดการภาระงาน (Task Management)
+   - รองรับภาระงานที่หลากหลาย: ระบบถูกออกแบบมาเพื่อจัดการทั้งการเรียนในห้องเรียน, การทำรายงาน, การเตรียมตัวสอบ และกิจกรรมต่าง ๆ 
+   - ลดความเครียด: มีฟีเจอร์ที่ช่วยลดสภาวะการอ่านหนังสือไม่ทัน ซึ่งเป็นสาเหตุหลักของความเครียดในนักศึกษา 
+3. ส่วนการพัฒนาและเทคโนโลยี (Technical Features)
+   - โครงสร้างระบบ (System Architecture): พัฒนาด้วยภาษา Python 3.1.0 และใช้ Flask เป็น Web Framework
+     
 ## 👥 สมาชิกและภาระงาน (Team Members & Responsibilities)
 
 ตารางแสดงการแบ่งงานรายสัปดาห์ระหว่างสมาชิกทั้ง 2 คน:
@@ -26,8 +31,19 @@
 - **Framework:** Streamlit
 - **Libraries:** (เช่น selenium, webdriver-manager, time, csv, os)
 
-## 📦 การติดตั้งและการใช้งาน (Setup & Installation) (VS Code, PyCharm, Command Prompt)
+## 📦 การติดตั้งและการใช้งาน (Setup & Installation) 
+
+   - โหลด python จาก https://www.python.org/downloads/
+   - ติดตั้ง VScode จาก https://code.visualstudio.com/download
+   - ทำการสกัดข้อมูลใน VScode ด้วยภาษา python https://github.com/francesco23347/Design-Thinking-2025/blob/main/app.py
+   - เชื่อม Steamlit กับ github เพื่อทำหน้าเว็ป https://share.streamlit.io/?utm_source=streamlit&utm_medium=referral&utm_campaign=main&utm_content=-ss-streamlit-io-topright
+   - นำไฟล์ที่ได้จากการ scraping มาอัปโหลดใน github เพื่อมาใช้ในการสร้างเว็ป
+   - เว็ปที่ได้ https://design-thinking-2025-lyrsczs7n3ttncenyac2rq.streamlit.app/
 
 1. **Clone repository นี้:**
    [```bash](https://github.com/francesco23347/Design-Thinking-2025)
+
+เอกสารอ้างอิง
+   - เว็ปที่ใช้ในการ scraping ข้อมูล https://easytimetable.pro/education-timetable-generator/
+   - Source code ที่ใช่ในการ scraping ข้อมูล และการสร้างเว็ป มาจาก ChatGPT
 

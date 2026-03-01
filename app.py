@@ -1,6 +1,8 @@
 import streamlit as st
 import pandas as pd
+import matplotlib.pyplot as plt
 from datetime import datetime, timedelta, time
+from io import BytesIO
 
 st.set_page_config(page_title="Study Planner", page_icon="📚", layout="wide")
 
@@ -151,3 +153,34 @@ if "edit_mode" in st.session_state and st.session_state.edit_mode:
         st.session_state.edit_mode = False
         st.success("แก้ไขเรียบร้อย ✅")
         st.rerun()
+
+st.subheader("📸 บันทึกตารางเป็นรูปภาพ")
+
+if st.button("บันทึกเป็นรูป (PNG)"):
+
+    fig, ax = plt.subplots(figsize=(20, 8))
+    ax.axis('off')
+
+    table = ax.table(
+        cellText=grid.values,
+        colLabels=grid.columns,
+        rowLabels=grid.index,
+        loc='center'
+    )
+
+    table.auto_set_font_size(False)
+    table.set_fontsize(8)
+    table.auto_set_column_width(col=list(range(len(grid.columns))))
+
+    buf = BytesIO()
+    plt.savefig(buf, format="png", bbox_inches='tight')
+    buf.seek(0)
+
+    st.download_button(
+        label="ดาวน์โหลดรูปภาพ",
+        data=buf,
+        file_name="study_schedule.png",
+        mime="image/png"
+    )
+
+    plt.close(fig)        
